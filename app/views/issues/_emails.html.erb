@@ -1,0 +1,11 @@
+<div id="cc-addresses">
+
+<% form_for(@emails, :as => 'emails',
+   :url => {:controller => :emails, :action => :show_emails, :issue_id => @issue }
+   :method => :post,
+   :html => {:id => 'new-emails-form', :style => (@emails ? '' : 'display: none;')}) ) do |f| %>
+      <%= render :partial => 'issues/address/form', :locals => { :f => f } %>
+  <%= f.text_field :title, size: "150" %>
+<% end %>
+ </div>
+

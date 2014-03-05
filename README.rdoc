@@ -1,0 +1,3 @@
+= emails
+
+This plugin should add a text field for adding emails for notifications
